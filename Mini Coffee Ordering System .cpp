@@ -1,3 +1,7 @@
+//Matthew A. Alegre
+//Act-1A
+//Mini Coffee Ordering System 
+
 #include <iostream>
 #include <limits>
 #include <string>
