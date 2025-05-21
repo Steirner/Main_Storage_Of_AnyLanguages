@@ -727,12 +727,12 @@ public class AttendanceSystem {
             }
             
             // Validate time format (numbers only)
-            if (!timeField.getText().trim().matches("\\d+([:]\\d+)?")) {
+             if (!timeField.getText().trim().matches("(0?[1-9]|1[0-2]):[0-5][0-9]")) { 
                 JOptionPane.showMessageDialog(dialog, 
-                    "Time must be in numeric format (e.g., 9:30)!", 
-                    "Input Error", JOptionPane.ERROR_MESSAGE);
-                return;
-            }
+                "Time must be in 12-hour format with hours 1-12 and minutes 0-59! ", 
+                "Input Error", JOptionPane.ERROR_MESSAGE); 
+                 return; 
+            } 
             
             // Get current date and time
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
