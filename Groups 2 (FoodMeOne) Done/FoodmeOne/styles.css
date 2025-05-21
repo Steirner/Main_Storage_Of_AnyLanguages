@@ -1,0 +1,1221 @@
+/* Reset default browser styles to ensure consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+    font-family: 'Poppins', sans-serif; /* Sets Poppins as the default font for the entire page */
+}
+
+/* Animation for fading in elements from invisible to visible */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Animation for sliding elements down from above with fade-in effect */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px); /* Starts 30px above its final position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Ends at its natural position */
+    }
+}
+
+/* Animation for sliding elements up from below with fade-in effect */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Starts 30px below its final position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Ends at its natural position */
+    }
+}
+
+/* Animation for a subtle scaling effect to create a pulsing appearance */
+@keyframes pulse {
+    0% { transform: scale(1); } /* Normal size */
+    50% { transform: scale(1.05); } /* Slightly enlarged */
+    100% { transform: scale(1); } /* Back to normal size */
+}
+
+/* Sets the default background and text color for the body */
+body {
+    background-color: bisque; /* Light peachy background color */
+    color: bisque; /* Default text color, though often overridden */
+}
+
+/* Styles for the navigation bar at the top of the page */
+.navbar {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Spreads items across the navbar */
+    align-items: center; /* Vertically centers items */
+    padding: 1.5rem 5%; /* Padding for spacing */
+    background-color: whitesmoke; /* Light background for navbar */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    position: fixed; /* Fixes navbar at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Aligns to top of viewport */
+    z-index: 1000; /* Ensures navbar stays above other content */
+}
+
+/* Styles for the logo in the navbar */
+.logo {
+    font-size: 1.8rem; /* Larger font size for prominence */
+    font-weight: 700; /* Bold font weight */
+    color: #CF0F47; /* Custom pinkish-red color */
+}
+
+/* Styles for the navigation links container */
+.nav-links {
+    display: flex; /* Horizontal layout for links */
+    gap: 2.5rem; /* Spacing between links */
+}
+
+/* Styles for individual navigation links */
+.nav-links a {
+    text-decoration: none; /* Removes default underline */
+    color: gray; /* Default link color */
+    font-weight: 500; /* Medium-bold font */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    color: bisque; /* Changes to bisque on hover */
+}
+
+/* Ensures logo link inherits parent styles and has no underline */
+.logo a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent (.logo) */
+}
+
+/* Styles for the hero section, typically the main banner */
+.hero {
+    display: flex; /* Flexbox for side-by-side layout */
+    justify-content: space-between; /* Spreads content and image */
+    align-items: center; /* Vertically centers content */
+    padding: 8% 10%; /* Generous padding for spacing */
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(45deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7)); /* Subtle white gradient background */
+}
+
+/* Styles for the text content in the hero section */
+.hero-content {
+    flex: 1; /* Takes up available space */
+    padding-right: 5%; /* Spacing between text and image */
+}
+
+/* Main heading in hero section */
+.hero-content h1 {
+    font-size: 3.5rem; /* Large font for emphasis */
+    margin-bottom: 1rem; /* Spacing below */
+    color: bisque; /* Matches body text color */
+    line-height: 1.2; /* Improved readability */
+}
+
+/* Subheading in hero section */
+.hero-content h2 {
+    font-size: 2.5rem; /* Slightly smaller than h1 */
+    color: bisque; /* Matches body text color */
+    margin-bottom: 1.5rem; /* Spacing below */
+}
+
+/* Paragraph text in hero section */
+.hero-content p {
+    font-size: 1.2rem; /* Readable font size */
+    color: #666; /* Darker gray for contrast */
+    margin-bottom: 2rem; /* Spacing below */
+}
+
+/* Call-to-action button in hero section */
+.cta-button {
+    padding: 1rem 2rem; /* Comfortable padding */
+    font-size: 1.1rem; /* Readable font size */
+    background-color: whitesmoke; /* Light background */
+    color: grey; /* Text color */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: all 0.3s ease; /* Smooth transitions for all properties */
+    text-decoration: none; /* Ensures no underline if used as a link */
+}
+
+/* Hover effect for CTA button */
+.cta-button:hover {
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+}
+
+/* Container for hero image */
+.hero-image {
+    flex: 1; /* Takes up available space */
+    display: flex; /* Centers image */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the hero section image */
+.hero-image img {
+    max-width: 100%; /* Ensures image doesn't overflow */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Prominent shadow */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+/* Hover effect for hero image */
+.hero-image img:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+/* Grid layout for category cards */
+.categories {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 2rem; /* Spacing between cards */
+    padding: 5% 10%; /* Padding around section */
+    background-color: bisque; /* Matches body background */
+}
+
+/* Styles for individual category cards */
+.category-card {
+    position: relative; /* For positioning the label */
+    overflow: hidden; /* Hides overflow content */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth lift on hover */
+}
+
+/* Hover effect for category cards */
+.category-card:hover {
+    transform: translateY(-10px); /* Lifts card up */
+}
+
+/* Image styles for category cards */
+.category-card img {
+    width: 100%; /* Full width */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensures image covers area without distortion */
+}
+
+/* Label for category cards */
+.category-label {
+    position: absolute; /* Overlays image */
+    bottom: 0; /* Aligns to bottom */
+    left: 0;
+    right: 0;
+    padding: 1rem; /* Padding for text */
+    background: linear-gradient(transparent, rgba(0,0,0,0.8)); /* Gradient overlay */
+    color: white; /* Text color */
+    font-weight: 600; /* Bold text */
+    text-align: center; /* Centered text */
+}
+
+/* Main content container */
+.container {
+    max-width: 1200px; /* Limits width for larger screens */
+    margin: 0 auto; /* Centers container */
+    padding: 2rem; /* Internal spacing */
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+/* Main title for sections */
+.main-title {
+    text-align: left; /* Left-aligned */
+    color: #693d5a; /* Custom purple color */
+    font-size: 1.5rem; /* Moderate size */
+    margin-bottom: 2rem; /* Spacing below */
+    font-weight: 600; /* Bold text */
+    animation: slideDown 0.8s ease-out; /* Slide-down animation */
+}
+
+/* Grid layout for recipe cards */
+.recipe-grid {
+    display: grid; /* Grid layout */
+    gap: 2rem; /* Spacing between cards */
+}
+
+/* Styles for individual recipe cards */
+.recipe-card {
+    border-bottom: 1px solid #eee; /* Separator line */
+    padding-bottom: 2rem; /* Spacing below */
+    margin-bottom: 2rem; /* Spacing below */
+    opacity: 0; /* Initially invisible */
+    animation: slideUp 0.8s ease-out forwards; /* Slide-up animation */
+}
+
+/* Staggered animation delays for recipe cards */
+.recipe-card:nth-child(1) { animation-delay: 0.2s; }
+.recipe-card:nth-child(2) { animation-delay: 0.4s; }
+.recipe-card:nth-child(3) { animation-delay: 0.6s; }
+
+/* Styles for recipe images */
+.recipe-image {
+    margin-bottom: 1rem; /* Spacing below */
+    position: relative; /* For overlay positioning */
+    overflow: hidden; /* Hides overflow */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for recipe images */
+.recipe-image:hover {
+    transform: translateY(-5px); /* Lifts image */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* Recipe image styles */
+.recipe-image img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.5s ease; /* Smooth zoom on hover */
+    display: block; /* Removes extra space below image */
+}
+
+/* Zoom effect for recipe images on hover */
+.recipe-image:hover img {
+    transform: scale(1.05); /* Slight zoom */
+}
+
+/* Overlay for recipe images */
+.image-overlay {
+    position: absolute; /* Overlays image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Initially transparent */
+    transition: background 0.3s ease; /* Smooth background change */
+}
+
+/* Hover effect for image overlay */
+.recipe-image:hover .image-overlay {
+    background: rgba(0, 0, 0, 0.1); /* Subtle dark overlay */
+}
+
+/* Styles for date text */
+.date {
+    color: #666; /* Gray color */
+    font-size: 0.9rem; /* Smaller font */
+    margin-bottom: 0.5rem; /* Spacing below */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+/* Recipe title styles */
+.recipe-title {
+    font-size: 1.75rem; /* Prominent size */
+    margin-bottom: 1rem; /* Spacing below */
+    color: #222; /* Dark color */
+    font-weight: 600; /* Bold text */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+/* Hover effect for recipe title */
+.recipe-card:hover .recipe-title {
+    color: #693d5a; /* Changes to purple on hover */
+}
+
+/* Recipe description text */
+.recipe-description {
+    color: #555; /* Medium gray */
+    margin-bottom: 1rem; /* Spacing below */
+    font-size: 1rem; /* Standard size */
+}
+
+/* Continue reading link styles */
+.continue-reading {
+    color: #f4b942; /* Yellow color */
+    text-decoration: none; /* No underline */
+    font-weight: 600; /* Bold text */
+    font-size: 0.9rem; /* Smaller font */
+    position: relative; /* For pseudo-element positioning */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+/* Underline effect for continue reading link */
+.continue-reading::after {
+    content: ''; /* Empty pseudo-element */
+    position: absolute; /* Positioned below text */
+    bottom: -3px;
+    left: 0;
+    width: 0; /* Initially no width */
+    height: 2px; /* Thin line */
+    background-color: #f4b942; /* Matches text color */
+    transition: width 0.3s ease; /* Smooth width expansion */
+}
+
+/* Hover effect for continue reading underline */
+.continue-reading:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+/* View more button container */
+.view-more {
+    text-align: center; /* Centered text */
+    margin-top: 2rem; /* Spacing above */
+    opacity: 0; /* Initially invisible */
+    animation: slideUp 0.8s ease-out 0.8s forwards; /* Slide-up animation */
+}
+
+/* View more button styles */
+.view-more-btn {
+    background-color: #693d5a; /* Purple background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 1rem 2rem; /* Comfortable padding */
+    font-size: 0.9rem; /* Smaller font */
+    font-weight: 600; /* Bold text */
+    cursor: pointer; /* Hand cursor */
+    transition: all 0.3s ease; /* Smooth transitions */
+    border-radius: 4px; /* Slightly rounded corners */
+    position: relative; /* For positioning effects */
+    overflow: hidden; /* Hides overflow */
+}
+
+/* Hover effect for view more button */
+.view-more-btn:hover {
+    background-color: #553249; /* Darker purple */
+    transform: translateY(-3px); /* Slight lift */
+    box-shadow: 0 5px 15px rgba(105, 61, 90, 0.3); /* Subtle shadow */
+}
+
+/* Active state for view more button */
+.view-more-btn:active {
+    transform: translateY(-1px); /* Subtle press effect */
+}
+
+/* Responsive styles for medium screens */
+@media (min-width: 768px) {
+    .recipe-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 3rem; /* Larger gap */
+    }
+
+    .recipe-card {
+        display: grid; /* Grid layout for card */
+        grid-template-columns: 300px 1fr; /* Image and text side by side */
+        gap: 2rem; /* Spacing between image and text */
+        align-items: start; /* Aligns items to top */
+    }
+
+    .recipe-image {
+        margin-bottom: 0; /* Removes bottom margin */
+    }
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 767px) {
+    .container {
+        padding: 1rem; /* Reduced padding */
+    }
+
+    .recipe-title {
+        font-size: 1.5rem; /* Smaller title */
+    }
+}
+
+/* Footer styles */
+.footer {
+    background-color: bisque; /* Matches body background */
+    color: #333; /* Dark text */
+    padding: 3rem 0 1rem; /* Padding for spacing */
+    margin-top: 3rem; /* Spacing above */
+    border-top: 1px solid #eee; /* Separator line */
+    animation: fadeIn 0.8s ease-out; /* Fade-in animation */
+}
+
+/* Footer content container */
+.footer-container {
+    max-width: 1500px; /* Limits width */
+    margin: 0 auto; /* Centers container */
+    padding: 0 2rem; /* Side padding */
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Spacing between sections */
+}
+
+/* Footer section animation */
+.footer-section {
+    opacity: 0; /* Initially invisible */
+    animation: slideUp 0.8s ease-out forwards; /* Slide-up animation */
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    max-width: 1200px; /* Limits width */
+    margin: 2rem auto 0; /* Centers with top margin */
+    padding: 1.5rem 2rem; /* Padding */
+    border-top: 1px solid #eee; /* Separator line */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Spreads content */
+    align-items: center; /* Vertically centers */
+    flex-wrap: wrap; /* Wraps on small screens */
+    gap: 1rem; /* Spacing between items */
+    opacity: 0; /* Initially invisible */
+    animation: fadeIn 0.8s ease-out 0.5s forwards; /* Fade-in animation */
+}
+
+/* Team section styles */
+.about-section.our-team {
+    padding: 5rem 0; /* Vertical padding */
+    margin: 2rem 0; /* Spacing above and below */
+}
+
+/* Section title styles */
+.section-title {
+    text-align: center; /* Centered text */
+    color: #693d5a; /* Purple color */
+    font-size: 2rem; /* Large font */
+    margin-bottom: 3rem; /* Spacing below */
+    position: relative; /* For pseudo-element */
+    font-weight: 600; /* Bold text */
+}
+
+/* Underline effect for section title */
+.section-title::after {
+    content: ''; /* Empty pseudo-element */
+    position: absolute; /* Positioned below text */
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers horizontally */
+    width: 60px; /* Initial width */
+    height: 3px; /* Thin line */
+    background-color: #f4b942; /* Yellow color */
+    transition: width 0.3s ease; /* Smooth width expansion */
+}
+
+/* Hover effect for section title underline */
+.section-title:hover::after {
+    width: 100px; /* Wider on hover */
+}
+
+/* Grid layout for team members */
+.team-grid {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 2.5rem; /* Spacing between cards */
+}
+
+/* Styles for individual team member cards */
+.team-member {
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hides overflow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transitions */
+    text-align: center; /* Centered content */
+    padding-bottom: 1.5rem; /* Bottom padding */
+    opacity: 0; /* Initially invisible */
+    transform: translateY(20px); /* Starts below position */
+    animation: fadeInUp 0.6s ease forwards; /* Fade-in and slide-up */
+}
+
+/* Staggered animation delays for team members */
+.team-member:nth-child(1) { animation-delay: 0.1s; }
+.team-member:nth-child(2) { animation-delay: 0.3s; }
+.team-member:nth-child(3) { animation-delay: 0.5s; }
+.team-member:nth-child(4) { animation-delay: 0.7s; }
+
+/* Hover effect for team member cards */
+.team-member:hover {
+    transform: translateY(-10px); /* Lifts card */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* Team member image container */
+.member-image {
+    width: 100%; /* Full width */
+    height: 250px; /* Fixed height */
+    overflow: hidden; /* Hides overflow */
+    position: relative; /* For overlay */
+    margin-bottom: 1.5rem; /* Spacing below */
+}
+
+/* Overlay for team member image */
+.member-image::before {
+    content: ''; /* Empty pseudo-element */
+    position: absolute; /* Overlays image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(105, 61, 90, 0.4)); /* Gradient overlay */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Smooth fade-in */
+    z-index: 1; /* Above image */
+}
+
+/* Hover effect for team member image overlay */
+.team-member:hover .member-image::before {
+    opacity: 1; /* Visible on hover */
+}
+
+/* Team member image styles */
+.member-image img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Covers area without distortion */
+    transition: transform 0.5s ease; /* Smooth zoom */
+}
+
+/* Zoom effect for team member image on hover */
+.team-member:hover .member-image img {
+    transform: scale(1.1); /* Slight zoom */
+}
+
+/* Team member name styles */
+.team-member h3 {
+    color: #333; /* Dark text */
+    font-size: 1.3rem; /* Moderate size */
+    margin-bottom: 0.5rem; /* Spacing below */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+/* Hover effect for team member name */
+.team-member:hover h3 {
+    color: #693d5a; /* Purple on hover */
+}
+
+/* Team member title styles */
+.member-title {
+    color: #f4b942; /* Yellow color */
+    font-weight: 600; /* Bold text */
+    font-size: 0.9rem; /* Smaller font */
+    margin-bottom: 1rem; /* Spacing below */
+    position: relative; /* For pseudo-element */
+    display: inline-block; /* Limits width to content */
+}
+
+/* Underline effect for team member title */
+.member-title::after {
+    content: ''; /* Empty pseudo-element */
+    position: absolute; /* Below text */
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers horizontally */
+    width: 0; /* Initially no width */
+    height: 2px; /* Thin line */
+    background-color: #f4b942; /* Yellow color */
+    transition: width 0.3s ease; /* Smooth width expansion */
+}
+
+/* Hover effect for team member title underline */
+.team-member:hover .member-title::after {
+    width: 80%; /* Expands to 80% width */
+}
+
+/* Team member bio text */
+.member-bio {
+    color: #555; /* Medium gray */
+    font-size: 0.95rem; /* Slightly smaller font */
+    line-height: 1.6; /* Improved readability */
+    padding: 0 1.5rem; /* Side padding */
+    margin-bottom: 1rem; /* Spacing below */
+}
+
+/* Animation for team members fading in and sliding up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Starts below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Ends at natural position */
+    }
+}
+
+/* Responsive adjustments for team grid on medium screens */
+@media (max-width: 992px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+}
+
+/* Responsive adjustments for team grid on small screens */
+@media (max-width: 767px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* Single column */
+        max-width: 400px; /* Limits width */
+        margin: 0 auto; /* Centers grid */
+    }
+    
+    .section-title {
+        font-size: 1.8rem; /* Smaller title */
+    }
+}
+
+/* Our Story section styles */
+.about-section.our-story {
+    padding: 5rem 0; /* Vertical padding */
+    margin: 2rem 0; /* Spacing above and below */
+}
+
+/* About section title (reused from team section) */
+.section-title {
+    text-align: center; /* Centered text */
+    color: #693d5a; /* Purple color */
+    font-size: 2rem; /* Large font */
+    margin-bottom: 3rem; /* Spacing below */
+    position: relative; /* For pseudo-element */
+    font-weight: 600; /* Bold text */
+}
+
+/* Underline effect for about section title */
+.section-title::after {
+    content: ''; /* Empty pseudo-element */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers horizontally */
+    width: 60px; /* Initial width */
+    height: 3px; /* Thin line */
+    background-color: #f4b942; /* Yellow color */
+    transition: width 0.3s ease; /* Smooth width expansion */
+}
+
+/* Hover effect for about section title underline */
+.section-title:hover::after {
+    width: 100px; /* Wider on hover */
+}
+
+/* Grid layout for about content */
+.about-content {
+    display: grid; /* Grid layout */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 3rem; /* Spacing between columns */
+    align-items: center; /* Vertically centers content */
+}
+
+/* About section image container */
+.about-image {
+    overflow: hidden; /* Hides overflow */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    opacity: 0; /* Initially invisible */
+    animation: fadeInLeft 0.8s ease forwards; /* Fade-in and slide-left */
+}
+
+/* Hover effect for about image */
+.about-image:hover {
+    transform: translateY(-5px); /* Lifts image */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* About section image styles */
+.about-image img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space */
+    transition: transform 0.6s ease; /* Smooth zoom */
+}
+
+/* Zoom effect for about image on hover */
+.about-image:hover img {
+    transform: scale(1.05); /* Slight zoom */
+}
+
+/* About section text container */
+.about-text {
+    opacity: 0; /* Initially invisible */
+    animation: fadeInRight 0.8s ease 0.3s forwards; /* Fade-in and slide-right */
+}
+
+/* About section paragraph text */
+.about-text p {
+    color: #555; /* Medium gray */
+    font-size: 1.1rem; /* Readable size */
+    line-height: 1.8; /* Improved readability */
+    margin-bottom: 1.5rem; /* Spacing below */
+}
+
+/* Remove bottom margin for last paragraph */
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Animation for sliding in from the left */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px); /* Starts left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Ends at natural position */
+    }
+}
+
+/* Animation for sliding in from the right */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px); /* Starts right */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Ends at natural position */
+    }
+}
+
+/* Responsive adjustments for about section on medium screens */
+@media (max-width: 992px) {
+    .about-content {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 2rem; /* Smaller gap */
+    }
+    
+    .about-image {
+        margin-bottom: 1rem; /* Spacing below */
+        animation: fadeInUp 0.8s ease forwards; /* Change to slide-up */
+    }
+    
+    .about-text {
+        animation: fadeInUp 0.8s ease 0.3s forwards; /* Change to slide-up */
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px); /* Starts below */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Ends at natural position */
+        }
+    }
+}
+
+/* Responsive adjustments for about section on small screens */
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 1.8rem; /* Smaller title */
+    }
+    
+    .about-text p {
+        font-size: 1rem; /* Smaller text */
+    }
+}
+
+/* Contact section styles */
+.about-section.contact {
+    padding: 3rem 0; /* Vertical padding */
+    margin: 2rem 0; /* Spacing above and below */
+}
+
+/* Contact section title (reused) */
+.section-title {
+    text-align: center; /* Centered text */
+    color: #693d5a; /* Purple color */
+    font-size: 2rem; /* Large font */
+    margin-bottom: 3rem; /* Spacing below */
+    position: relative; /* For pseudo-element */
+    font-weight: 600; /* Bold text */
+}
+
+/* Underline effect for contact section title */
+.section-title::after {
+    content: ''; /* Empty pseudo-element */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers horizontally */
+    width: 60px; /* Initial width */
+    height: 3px; /* Thin line */
+    background-color: #f4b942; /* Yellow color */
+    transition: width 0.3s ease; /* Smooth width expansion */
+}
+
+/* Hover effect for contact section title underline */
+.section-title:hover::after {
+    width: 100px; /* Wider on hover */
+}
+
+/* Grid layout for contact content */
+.contact-content {
+    display: grid; /* Grid layout */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 3rem; /* Spacing between columns */
+    align-items: start; /* Aligns to top */
+}
+
+/* Contact information container */
+.contact-info {
+    opacity: 0; /* Initially invisible */
+    animation: fadeInLeft 0.8s ease forwards; /* Fade-in and slide-left */
+}
+
+/* Contact info paragraph text */
+.contact-info p {
+    color: #555; /* Medium gray */
+    font-size: 1.1rem; /* Readable size */
+    line-height: 1.8; /* Improved readability */
+    margin-bottom: 2rem; /* Spacing below */
+}
+
+/* Container for contact methods */
+.contact-methods {
+    margin-bottom: 2rem; /* Spacing below */
+}
+
+/* Individual contact method styles */
+.contact-method {
+    display: flex; /* Horizontal layout */
+    align-items: center; /* Vertically centers */
+    margin-bottom: 1.2rem; /* Spacing below */
+    transition: transform 0.3s ease; /* Smooth slide effect */
+}
+
+/* Hover effect for contact method */
+.contact-method:hover {
+    transform: translateX(5px); /* Slight slide right */
+}
+
+/* Icon styles for contact methods */
+.contact-method i {
+    color: #693d5a; /* Purple color */
+    font-size: 1.2rem; /* Moderate size */
+    margin-right: 1rem; /* Spacing to text */
+    width: 20px; /* Fixed width */
+    height: 20px; /* Fixed height */
+    display: flex; /* Centers icon */
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+/* Hover effect for contact method icon */
+.contact-method:hover i {
+    transform: scale(1.2); /* Enlarges icon */
+    color: #f4b942; /* Changes to yellow */
+}
+
+/* Contact method text */
+.contact-method p {
+    margin-bottom: 0; /* Removes default margin */
+    font-size: 1rem; /* Standard size */
+}
+
+/* Social links container */
+.social-links {
+    display: flex; /* Horizontal layout */
+    gap: 1rem; /* Spacing between links */
+}
+
+/* Individual social link styles */
+.social-link {
+    display: flex; /* Centers icon */
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Fixed size */
+    height: 40px;
+    background-color: #693d5a; /* Purple background */
+    color: white; /* White icon */
+    border-radius: 50%; /* Circular shape */
+    font-size: 1.2rem; /* Moderate icon size */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for social links */
+.social-link:hover {
+    background-color: #f4b942; /* Yellow background */
+    transform: translateY(-5px); /* Lifts up */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Contact form container */
+.contact-form {
+    background-color: #f8f8f8; /* Light gray background */
+    padding: 2rem; /* Internal padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    opacity: 0; /* Initially invisible */
+    animation: fadeInRight 0.8s ease 0.3s forwards; /* Fade-in and slide-right */
+}
+
+/* Form group container */
+.form-group {
+    margin-bottom: 1.5rem; /* Spacing below */
+}
+
+/* Form label styles */
+.form-group label {
+    display: block; /* Full width */
+    margin-bottom: 0.5rem; /* Spacing below */
+    color: #333; /* Dark text */
+    font-weight: 500; /* Medium-bold */
+}
+
+/* Form input and textarea styles */
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full width */
+    padding: 0.8rem; /* Comfortable padding */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 1rem; /* Standard size */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Focus state for form inputs */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none; /* Removes default outline */
+    border-color: #693d5a; /* Purple border */
+    box-shadow: 0 0 0 3px rgba(105, 61, 90, 0.1); /* Subtle glow */
+}
+
+/* Submit button styles */
+.submit-btn {
+    background-color: #693d5a; /* Purple background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 1rem 2rem; /* Comfortable padding */
+    font-size: 1rem; /* Standard size */
+    font-weight: 600; /* Bold text */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Hand cursor */
+    transition: all 0.3s ease; /* Smooth transitions */
+    width: 100%; /* Full width */
+}
+
+/* Hover effect for submit button */
+.submit-btn:hover {
+    background-color: #553249; /* Darker purple */
+    transform: translateY(-3px); /* Lifts up */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Active state for submit button */
+.submit-btn:active {
+    transform: translateY(-1px); /* Subtle press effect */
+}
+
+/* Animation for sliding in from the left */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px); /* Starts left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Ends at natural position */
+    }
+}
+
+/* Animation for sliding in from the right */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px); /* Starts right */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Ends at natural position */
+    }
+}
+
+/* Responsive adjustments for contact section on medium screens */
+@media (max-width: 992px) {
+    .contact-content {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 2rem; /* Smaller gap */
+    }
+    
+    .contact-info {
+        animation: fadeInUp 0.8s ease forwards; /* Change to slide-up */
+    }
+    
+    .contact-form {
+        animation: fadeInUp 0.8s ease 0.3s forwards; /* Change to slide-up */
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px); /* Starts below */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Ends at natural position */
+        }
+    }
+}
+
+/* Responsive adjustments for contact section on small screens */
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 1.8rem; /* Smaller title */
+    }
+    
+    .contact-info p {
+        font-size: 1rem; /* Smaller text */
+    }
+    
+    .social-links {
+        justify-content: center; /* Centers social links */
+    }
+}
+
+/* Recipe section styles */
+.recipe {
+    background-color: bisque; /* Matches body background */
+    color: black; /* Black text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(95, 94, 94, 0.1); /* Subtle shadow */
+    padding: 30px; /* Internal padding */
+}
+
+/* Recipe header container */
+.recipe-header {
+    margin-bottom: 30px; /* Spacing below */
+}
+
+/* Main heading for recipe */
+h1 {
+    font-size: 2.2em; /* Large font */
+    color: rgb(252, 252, 252); /* White text */
+    margin-bottom: 20px; /* Spacing below */
+}
+
+/* Recipe metadata container */
+.recipe-meta {
+    border-bottom: 1px solid #f8f5f5; /* Light separator line */
+    padding-bottom: 15px; /* Spacing below */
+}
+
+/* Rating container */
+.rating {
+    margin-bottom: 10px; /* Spacing below */
+}
+
+/* Star rating styles */
+.stars {
+    color: #ff4e50; /* Reddish color for stars */
+    font-size: 1.2em; /* Moderate size */
+}
+
+/* Rating score text */
+.score {
+    margin-left: 10px; /* Spacing from stars */
+    color: black; /* Black text */
+}
+
+/* Author information styles */
+.author-info {
+    font-size: 0.9em; /* Smaller font */
+    color: black; /* Black text */
+    margin-bottom: 10px; /* Spacing below */
+}
+
+/* Author link styles */
+.author-info a {
+    color: #0066cc; /* Blue link color */
+    text-decoration: none; /* No underline */
+}
+
+/* Hover effect for author link */
+.author-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Date text in recipe meta */
+.date {
+    margin-left: 15px; /* Spacing from author */
+}
+
+/* Disclaimer text styles */
+.disclaimer {
+    color: black; /* Black text */
+    font-size: 0.8em; /* Smaller font */
+}
+
+/* Recipe description paragraph */
+.recipe-description p {
+    margin-bottom: 20px; /* Spacing below */
+}
+
+/* Recipe image container */
+.recipe-image {
+    margin: 30px 0; /* Vertical spacing */
+}
+
+/* Recipe image styles */
+.recipe-image img {
+    width: 100%; /* Full width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Recipe content container */
+.recipe-container {
+    max-width: 100000px; /* Extremely large max-width (likely a typo) */
+    margin: 0 auto; /* Centers container */
+    background-color: rgb(133, 129, 123); /* Grayish background */
+    padding: 30px; /* Internal padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Section heading styles */
+h2 {
+    color: #2A4759; /* Dark blue color */
+    margin-bottom: 20px; /* Spacing below */
+    font-size: 1.8em; /* Large font */
+}
+
+/* Grid layout for recipe sections (ingredients and instructions) */
+.recipe-sections {
+    display: grid; /* Grid layout */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 10px; /* Small gap between columns */
+}
+
+/* Responsive adjustments for recipe sections */
+@media (max-width: 1080px) {
+    .recipe-sections {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+/* Ingredients list styles */
+.ingredients ul {
+    list-style-type: none; /* Removes bullets */
+}
+
+/* Individual ingredient item */
+.ingredients li {
+    padding: 8px 0; /* Vertical padding */
+    border-bottom: 1px solid #646060; /* Dark separator line */
+}
+
+/* Instructions list styles */
+.instructions ol {
+    padding-left: 20px; /* Indentation for numbers */
+}
+
+/* Individual instruction item */
+.instructions li {
+    margin-bottom: 15px; /* Spacing below */
+    padding-left: 10px; /* Indentation */
+}
+
+/* Number marker for instructions */
+.instructions li::marker {
+    color: #d32f2f; /* Red color */
+    font-weight: bold; /* Bold numbers */
+}
+
+/* Remove border for last ingredient and instruction */
+.ingredients li:last-child,
+.instructions li:last-child {
+    border-bottom: none; /* No separator for last item */
+}
