@@ -2,7 +2,7 @@
 
 # 💫 Hi there, I'm Steirner! 
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=3B82F6&center=true&vCenter=true&width=600&lines=Full+Stack+Developer;Tech+Enthusiast;Always+Learning+%F0%9F%9A%80" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=3B82F6&center=true&vCenter=true&width=600&lines=Full+Stack+Developer;Tech+Enthusiast;Always+Learning+%F0%9F%9A%80;Vibe+Coding+%F0%9F%8E%B5" alt="Typing SVG" />
 
 </div>
 
@@ -12,9 +12,9 @@
 
 ### 🎯 About Me
 
-🎓 **Student** | 💻 **Developer** | ⚡ **Champange Face**
+🎓 **Student** | 💻 **Developer** | ⚡ **Champange Face** | 🎵 **Vibe Coding**
 
-*Passionate about coding, design, and building amazing things*
+*Passionate about coding, design, and building amazing things while vibing to music*
 
 </div>
 
@@ -99,34 +99,12 @@
 
 ## 📊 GitHub Analytics
 
-<table>
-<tr>
-<td width="50%">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Steirner&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" />
-
-</td>
-<td width="50%">
-
-<img src="https://nirzak-streak-stats.vercel.app/?user=Steirner&theme=tokyonight&hide_border=true" />
-
-</td>
-</tr>
-</table>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Steirner&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&langs_count=8" width="47%" />
-
-</div>
+<img src="https://github-readme-stats.vercel.app/api?username=Steirner&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true" width="48%" />
+<img src="https://nirzak-streak-stats.vercel.app/?user=Steirner&theme=tokyonight&hide_border=true" width="48%" />
 
 <br>
 
----
-
-<div align="center">
-
-## 🏆 Top Contributed Repositories
-
-<img src="https://github-contributor-stats.vercel.app/api?username=Steirner&limit=5&theme=tokyonight&combine_all_yearly_contributions=true&hide_border=true" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Steirner&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&langs_count=10" width="48%" />
 
 </div>
 
@@ -154,32 +132,7 @@
 
 <br>
 
-<table>
-<tr>
-<td align="center" width="50%">
-
-### 🇵🇭 GCash (Philippines)
-*Scan QR Code to Donate*
-
-<br>
-
-<img src="assets/gcash-qr.png" alt="GCash QR Code" width="280" style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"/>
-
-<br><br>
-
-📱 **Mobile:** `+63 930 359 ••••`
-
-<br>
-
-![GCash](https://img.shields.io/badge/GCash-007CFF?style=for-the-badge&logo=cashapp&logoColor=white)
-
-</td>
-<td align="center" width="50%">
-
-### 🌍 PayPal (International)
-*For supporters worldwide*
-
-<br><br>
+### 🌍 PayPal Donation
 
 <a href="https://paypal.me/@Phisherkun">
 <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" height="50"/>
@@ -187,15 +140,7 @@
 
 <br><br>
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square&logo=paypal)](https://paypal.me/@Phisherkun)
-
-<br>
-
-*Every contribution helps me create more!*
-
-</td>
-</tr>
-</table>
+[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square&logo=paypal)](https://paypal.me/@Phisherkun)
 
 <br>
 
@@ -209,7 +154,6 @@ Your donations help me:
 
 <br>
 
-[![Sponsor](https://img.shields.io/badge/💖_Become_a_Sponsor-FF4081?style=for-the-badge)](https://paypal.me/@Phisherkun)
 
 </div>
 
@@ -221,7 +165,7 @@ Your donations help me:
 
 ## 📈 Profile Stats
 
-[![](https://visitcount.itsvg.in/api?id=Steirner&icon=2&color=6)](https://visitcount.itsvg.in)
+[![Profile Views](https://visitcount.itsvg.in/api?id=Steirner&icon=2&color=6)](https://visitcount.itsvg.in)
 
 <br>
 
