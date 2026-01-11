@@ -28,10 +28,12 @@
 
 <img src="assets/gcash-qr.png" alt="GCash QR Code" width="300"/>
 
-<p><i>Or send directly to: <b>09XX-XXX-XXXX</b></i></p>
+<p><i>Mobile No.: <b>+63 930 359 ••••</b></i></p>
 
 ---
 
+### 🌐 International Donations
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/@Phisherkun)
 
 </div>
 
