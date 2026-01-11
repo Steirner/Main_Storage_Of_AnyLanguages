@@ -39,7 +39,7 @@
 
 <div align="center">
   
-*Thank you for your support! 💙*
+*Thank you for your support! *
 
 </div>
 
