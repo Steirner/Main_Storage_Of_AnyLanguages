@@ -136,7 +136,7 @@
 <tr>
 <td align="center" width="50%">
 
-### 🇵🇭 GCash (Philippines)
+###  GCash (Philippines)
 *Scan QR Code to Donate*
 
 <br>
@@ -149,25 +149,6 @@
 
 <br>
 
-![GCash](https://img.shields.io/badge/GCash-007CFF?style=for-the-badge&logo=cashapp&logoColor=white)
-
-</td>
-<td align="center" width="50%">
-
-### 🌍 PayPal (International)
-*For supporters worldwide*
-
-<br><br>
-
-<a href="https://paypal.me/@Phisherkun">
-<img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" height="50"/>
-</a>
-
-<br><br>
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square&logo=paypal)](https://paypal.me/@Phisherkun)
-
-<br>
 
 *Every contribution helps me create more!*
 
