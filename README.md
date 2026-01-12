@@ -132,7 +132,32 @@
 
 <br>
 
-### 🌍 PayPal Donation
+<table>
+<tr>
+<td align="center" width="50%">
+
+### 🇵🇭 GCash (Philippines)
+*Scan QR Code to Donate*
+
+<br>
+
+<img src="assets/gcash-qr.png" alt="GCash QR Code" width="280"/>
+
+<br><br>
+
+📱 **Mobile:** `+63 930 359 ••••`
+
+<br>
+
+![GCash](https://img.shields.io/badge/GCash-007CFF?style=for-the-badge&logo=cashapp&logoColor=white)
+
+</td>
+<td align="center" width="50%">
+
+### 🌍 PayPal (International)
+*For supporters worldwide*
+
+<br><br>
 
 <a href="https://paypal.me/@Phisherkun">
 <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" height="50"/>
@@ -140,7 +165,15 @@
 
 <br><br>
 
-[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square&logo=paypal)](https://paypal.me/@Phisherkun)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square&logo=paypal)](https://paypal.me/@Phisherkun)
+
+<br>
+
+*Every contribution helps me create more!*
+
+</td>
+</tr>
+</table>
 
 <br>
 
@@ -154,6 +187,7 @@ Your donations help me:
 
 <br>
 
+[![Become a Sponsor](https://img.shields.io/badge/💖_Become_a_Sponsor-FF4081?style=for-the-badge)](https://paypal.me/@Phisherkun)
 
 </div>
 
