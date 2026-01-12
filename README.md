@@ -99,12 +99,9 @@
 
 ## 📊 GitHub Analytics
 
-<img src="https://github-readme-stats.vercel.app/api?username=Steirner&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true" width="48%" />
-<img src="https://nirzak-streak-stats.vercel.app/?user=Steirner&theme=tokyonight&hide_border=true" width="48%" />
-
-<br>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Steirner&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&langs_count=10" width="48%" />
+![](https://github-readme-stats.vercel.app/api?username=Steirner&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&show_icons=true)
+![](https://nirzak-streak-stats.vercel.app/?user=Steirner&theme=tokyonight&hide_border=true)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Steirner&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&langs_count=10)
 
 </div>
 
@@ -116,7 +113,7 @@
 
 ## 💭 Random Dev Quote
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
 
 </div>
 
@@ -132,16 +129,12 @@
 
 <br>
 
-<table>
-<tr>
-<td align="center" width="50%">
-
-###  GCash (Philippines)
-*Scan QR Code to Donate*
+### 🇵🇭 GCash Donation
+*Scan the QR code below to send a donation via GCash*
 
 <br>
 
-<img src="assets/gcash-qr.png" alt="GCash QR Code" width="280"/>
+<img src="assets/gcash-qr.png" alt="GCash QR Code" width="300"/>
 
 <br><br>
 
@@ -149,14 +142,9 @@
 
 <br>
 
+![GCash](https://img.shields.io/badge/GCash-007CFF?style=for-the-badge&logo=cashapp&logoColor=white)
 
-*Every contribution helps me create more!*
-
-</td>
-</tr>
-</table>
-
-<br>
+<br><br>
 
 ### 💝 Why Support?
 
@@ -165,10 +153,6 @@ Your donations help me:
 - 📚 Continue learning new technologies  
 - ☕ Stay caffeinated during coding sessions
 - 💡 Invest in better tools and resources
-
-<br>
-
-[![Become a Sponsor](https://img.shields.io/badge/💖_Become_a_Sponsor-FF4081?style=for-the-badge)](https://paypal.me/@Phisherkun)
 
 </div>
 
@@ -180,7 +164,7 @@ Your donations help me:
 
 ## 📈 Profile Stats
 
-[![Profile Views](https://visitcount.itsvg.in/api?id=Steirner&icon=2&color=6)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=Steirner&icon=2&color=6)](https://visitcount.itsvg.in)
 
 <br>
 
