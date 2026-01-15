@@ -134,7 +134,7 @@
 
 <br>
 
-<img src="assets/gcash-qr.png" alt="GCash QR Code" width="300"/>
+<img src="Assets/gcash-qr.png" alt="GCash QR Code" width="300"/>
 
 <br><br>
 
