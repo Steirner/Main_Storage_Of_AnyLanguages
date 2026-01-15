@@ -291,9 +291,7 @@ graph LR
 
 <div align="center">
 
-### 🎵 Currently Vibing To
 
-[![Spotify](https://novatorem-steirner.vercel.app/api/spotify)](https://open.spotify.com/user/steirner)
 
 </div>
 
