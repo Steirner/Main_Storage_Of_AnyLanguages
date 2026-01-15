@@ -202,7 +202,6 @@ graph LR
 - 🎨 Build 5+ production-ready web applications
 - 🤝 Collaborate with developers worldwide
 - 📝 Write technical articles and tutorials
-- 🏆 Achieve AWS/Azure certifications
 
 </div>
 
@@ -267,10 +266,7 @@ graph LR
 ## 🤝 Let's Connect!
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Steirner)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/steirner)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/steirner)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/steirner)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:steirner@example.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kunphisher@gmail.com)
 
 </div>
 
