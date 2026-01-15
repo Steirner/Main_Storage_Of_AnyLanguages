@@ -24,15 +24,11 @@ const steirner = {
     location: "Limay Bataan, Philippines 🇵🇭",
     role: "Full Stack Developer",
     education: "Associated of computer technology",
-    passion: ["Coding", "Design", "Innovation", "Music"],
+    passion: ["Coding", "Designer", "Cybersecurity", "Music"],
     currentFocus: "Building scalable web applications",
     funFact: "I code better with good music 🎵",
-    lifePhilosophy: "Champagne Face ✨ - Living life with style and code",
+    lifePhilosophy: "Champagne Face ✨ - Living nightmare on my past",
     
-    workingOn: {
-        learning: ["Advanced Rust", "Cloud Architecture", "Web3 Development"],
-        building: ["Open Source Projects", "Creative Web Experiences"],
-        improving: ["System Design", "Algorithm Optimization"]
     }
 };
 ```
