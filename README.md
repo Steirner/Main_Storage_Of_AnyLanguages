@@ -21,9 +21,9 @@
 
 ```typescript
 const steirner = {
-    location: "Balanga, Philippines 🇵🇭",
+    location: "Limay Bataan, Philippines 🇵🇭",
     role: "Full Stack Developer",
-    education: "Computer Science Student",
+    education: "Associated of computer technology",
     passion: ["Coding", "Design", "Innovation", "Music"],
     currentFocus: "Building scalable web applications",
     funFact: "I code better with good music 🎵",
