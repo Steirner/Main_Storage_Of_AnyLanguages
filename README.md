@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,18,20,24&height=200&section=header&text=Steirner&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=fff&desc=Full%20Stack%20Developer%20%7C%20Tech%20%7C%20Vibe%20Coder&descAlignY=55&descSize=20"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,18,20,24&height=200&section=header&text=Steirner&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=fff&desc=Full%20Stack%20Developer%20%7C%20Champange Faces%20%7C%20Vibe%20Coder&descAlignY=55&descSize=20"/>
 
 <!-- Animated Typing Text -->
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Building+the+Future+%F0%9F%9A%80;Code+%2B+Music+%3D+Magic+%F0%9F%8E%B5;Always+Learning%2C+Always+Growing+%F0%9F%8C%B1;Let's+Create+Something+Amazing!" alt="Typing SVG" />
@@ -216,7 +216,7 @@ graph LR
 
 <br><br>
 
-📱 **Mobile Number:** `+63 930 359 ••••`
+📱 **Mobile Number:** `+63 930 3597 412`
 
 <br>
 
